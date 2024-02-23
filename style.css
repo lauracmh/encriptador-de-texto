@@ -1,0 +1,149 @@
+body{
+    font-family: "Fredoka", sans-serif; 
+}
+
+h1 {
+    font-family: 'Cute Font', sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 90px;
+    color: white;
+    text-shadow: 0px 5px 5px black,2px 2px 2px black,2px 2px 2px black;
+    background-image: url(img/cripto.jpg);
+}
+
+.areaTexto {
+    width: 50%;
+    margin: 40px 40px 15px 40px; 
+}
+
+#textoUsuario {
+    align-items: center;
+    width: 100%;
+    height: 335px;
+    text-align:initial;
+    font-family: "Fredoka", sans-serif;
+    font-size: xx-large;
+    border: none;
+    cursor: pointer;
+    border-radius:20px;
+    padding: 10px;
+}
+
+#adv{
+    width: 15px;
+}
+
+.areaResultado{
+    width: 45%;
+    position: absolute;
+    right: 0;
+    top: 120px;
+    text-align: center;
+}
+
+.resultado {
+    height: 320px;
+    margin: 40px;
+    padding: 20px;
+    background-color: rgb(182, 219, 219);    
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+}
+
+#imagen{
+    width: 200px;
+    margin: 20px;
+}
+
+.resultado :first-child{
+    font-size: xx-large;
+    padding: 10px;
+}
+
+.botones {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    font-size: large;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer; 
+    background-color: rgb(49, 68, 68);
+    color: white;
+    border: none;
+    margin: 30px;
+}
+
+#copiar {
+    margin-top: 15px; 
+}
+
+button:hover{
+    background-color:rgb(29, 73, 58);
+    transform: scale(1.1);
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-image: url(img/cripto.jpg);
+}
+
+footer p{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-shadow:2px 2px 2px black,2px 2px 2px black,2px 5px 5px black;
+}
+
+@media screen and (max-width: 1024px){
+    h1 {
+        font-size: 70px;
+    }
+   
+    .areaTexto{
+        width: 100%;
+        margin: 20px 20px;
+    }
+
+    .areaResultado{
+        position: relative;
+        width: 100%;
+        top:auto;
+        margin: 20px 5px 20px 5px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .botones{
+        width: 100%;
+    }
+
+    button{
+        margin: 10px;
+        width: 300px;
+    }
+
+    footer{
+        height:max-content;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .botones{
+        display: grid;
+    }
+
+}
+
+

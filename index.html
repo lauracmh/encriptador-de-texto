@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Encriptador de Texto</h1>
+    </header>
+
+    <main>
+        <div class="areaTexto">
+            <textarea id="textoUsuario" type="text" cols="70" rows="25" pattern="[a-z]" onclick="limpiar();">Ingrese el texto aquí</textarea required>
+            <img id="adv" src="img/signo-de-exclamacion-en-un-circulo.png">
+            <label for="textoUsuario"> Sólo letras minúsculas y sin acentos</label>
+        </div>
+        
+        <div class="botones">
+            <button onclick="encriptar();" type="submit" id="encriptar">Encriptar</button>
+            <button onclick="desencriptar();" type="submit" id="desencriptar" >Desencriptar</button>
+        </div>
+        <div class="areaResultado">
+            <div class="resultado">
+                <p id="textoResultado">Ningún mensaje fue encontrado</p>
+                <p id="instruccion">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <img id="imagen" src="img/pngwing.com.png">
+            </div> 
+            <div>
+                <button onclick="copiar();" type="submit" id="copiar" hidden>Copiar</button>
+            </div> 
+
+        </div>
+    
+                        
+    </main>
+
+    <footer>
+        <p>Desarrollado por Laura Marín Hernández | Primer Challenge Programa ONE | 2024</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+    
+</html>
