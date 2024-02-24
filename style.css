@@ -52,6 +52,7 @@ h1 {
     text-align: center;
     border-radius: 20px;
     border: none;
+    text-justify: auto;
 }
 
 #imagen{
@@ -112,16 +113,19 @@ footer p{
    
     .areaTexto{
         width: 100%;
-        margin: 20px 20px;
+        margin: 20px;
     }
 
     .areaResultado{
         position: relative;
         width: 100%;
         top:auto;
-        margin: 20px 5px 20px 5px;
+        margin: 20px 5px 5px 3px;
         padding: 10px;
         border-radius: 10px;
+    }
+    .resultado{
+        margin: 10px;
     }
 
     .botones{
