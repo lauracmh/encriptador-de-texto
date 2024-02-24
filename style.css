@@ -63,6 +63,7 @@ h1 {
 .resultado :first-child{
     font-size: xx-large;
     padding: 10px;
+    overflow-wrap: break-word;
 }
 
 .botones {
